@@ -1,4 +1,4 @@
-import javax.print.DocFlavor;
+
 
 //该类主要是利用StringBuffer类的一些函数，其优点为：
 //1.可利用构造传入更多数据类型(限定Number和String的子类) 2.可以进行对象或者其他字符串比较
