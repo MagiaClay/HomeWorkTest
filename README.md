@@ -1,3 +1,0 @@
-# MWB
-MagiasWorkBase
-Hello World:)
