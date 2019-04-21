@@ -46,6 +46,7 @@ public MyArrayList(Collection<? extends Number> c)
 --------
 
 <br>
+
 * public void trimToSize()<br>
 * public void ensureCapacity(int minCapacity)<br>
 * public int indexOf(Object o)<br>
@@ -54,6 +55,7 @@ public MyArrayList(Collection<? extends Number> c)
 * public void add(int index, E element)<br>
 * public E remove(int index)<br>
 * public ListIterator<E> listIterator(int index)<br>
+  
   详情请见源码注释。<br>
 <br>
   
