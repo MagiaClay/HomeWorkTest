@@ -17,6 +17,7 @@ MyArrayList<E extends Number>
 <br>
 功能详解
 ---------
+<br>
 构造方法
 * 初始化容量构造
 ```
@@ -36,4 +37,12 @@ public MyArrayList(Collection<? extends Number> c)
 <br>
 一般方法
 --------
-
+* public void trimToSize()<br>
+* public void ensureCapacity(int minCapacity)<br>
+* public int indexOf(Object o)<br>
+* public <T> T[] toArray(T[] a)<br>
+* public E get(int index)<br>
+* public void add(int index, E element)<br>
+* public E remove(int index)<br>
+* public ListIterator<E> listIterator(int index)<br>
+  详情请见源码注释。<br>
