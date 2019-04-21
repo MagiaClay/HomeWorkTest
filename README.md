@@ -108,4 +108,12 @@ ElementData = (size == 0)? EMPTY_ELEMENTDATA: Arrays.copyOf(elementData, size);
 >* 根据动态分配实现增、删、改、查。<br>
 >* 迭代的方法则参考原ArrayList的内部类。<br>
 
-#
+**大多数功能参考自ArrayList**
+
+#Level-2 具有完整登陆、注册功能的APP
+--------------------------------
+
+>当前进度主要还在第一行代码的活动生命周期处。还没看数据库，日后补。<br>
+
+#当前进度
+--------
