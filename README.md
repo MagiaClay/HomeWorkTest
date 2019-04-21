@@ -49,3 +49,4 @@ public MyArrayList(Collection<? extends Number> c)
 <br>
 内部类
 ------
+* private class Itr implements Iterator<E>
