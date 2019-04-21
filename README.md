@@ -8,4 +8,5 @@ level-1 自己定义的AraayList
 ```
 MyArrayList<E extends Number>
 ```
-<br>整形数和浮点数<br>
+整形数和浮点数<br>
+* 可通过给定容量来初始化数组public MyArrayList(int initialCapacity)<br>
