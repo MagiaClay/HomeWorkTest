@@ -80,3 +80,4 @@ private class Itr implements Iterator<E>
 #构建思路过程
 --------
 
+>编写MyArrayList类时与编写MyString类时候不太相同，首先从ArrayList原本代码
