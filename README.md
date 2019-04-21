@@ -84,5 +84,13 @@ private class Itr implements Iterator<E>
 >* 有类集框架的基本内容：增、删、改、查以及迭代。<br>
 >* 以及其最大的优点动态分配内存。<br>
 >* 只能接受整型数和浮点数。<br>
+
 >实现增删改查的同时要保证内存不会分配过少导致数组越界，不会分配太多导致占用内存。<br>
 >得出结论：重点在于如何实现动态内存分配。
+
+```
+* public void ensureCapacity(int minCapacity)
+ElementData = (size == 0)? EMPTY_ELEMENTDATA: Arrays.copyOf(elementData, size);
+```
+
+>以及其它的三个判断函数，运用system.arraycopy（）函数来实现精准分配。
