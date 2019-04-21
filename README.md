@@ -56,11 +56,11 @@ public MyArrayList(Collection<? extends Number> c)
 * public void trimToSize()主要用来在数组元素有更改后进行数组容量最小化，清除多余的空间<br>
 * public void ensureCapacity(int minCapacity)确保有足够的空间分配新内存，若不够则扩大容量（所需要内存的最低容量）<br>
 * public int indexOf(Object o)索引内容返回其指针<br>
-* public <T> T[] toArray(T[] a)将<br>
-* public E get(int index)<br>
-* public void add(int index, E element)<br>
-* public E remove(int index)<br>
-* public ListIterator<E> listIterator(int index)<br>
+* public <T> T[] toArray(T[] a)返回一个指定泛型的特定元素<br>
+* public E get(int index)得到索引目标处的元素内容<br>
+* public void add(int index, E element)指定位置内添加元素<br>
+* public E remove(int index)指定位置内移除元素<br>
+* public ListIterator<E> listIterator(int index)迭代方法<br>
   
   详情请见源码注释。<br>
 <br>
