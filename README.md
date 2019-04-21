@@ -75,4 +75,8 @@ public MyArrayList(Collection<? extends Number> c)
 private class Itr implements Iterator<E>
 ```
 <br>
-照写了原Arraylist在AbstractList.listitr的优化版本
+照写了原Arraylist在AbstractList.listitr的优化版本。<br>
+
+#构建思路过程
+--------
+
