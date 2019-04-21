@@ -80,4 +80,5 @@ private class Itr implements Iterator<E>
 #构建思路过程
 --------
 
->编写MyArrayList类时与编写MyString类时候不太相同，首先从ArrayList原本代码
+>编写MyArrayList类时与编写MyString类时候不太相同，首先从ArrayList原本功能分析。<br>
+>* 有类集框架的基本内容：增、删、改、查以及迭代，以及其最大的优点动态分配内存。<br>
