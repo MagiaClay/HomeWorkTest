@@ -22,6 +22,17 @@ MyArrayList<E extends Number>
 
 <br>
 
+继承与实现接口
+--------
+继承
+```
+AbstractList<E>
+```
+实现接口
+```
+List<E>
+```
+
 构造方法
 -------
 
@@ -93,4 +104,6 @@ private class Itr implements Iterator<E>
 ElementData = (size == 0)? EMPTY_ELEMENTDATA: Arrays.copyOf(elementData, size);
 ```
 
->以及其它的三个判断函数，运用system.arraycopy（）函数来实现精准分配。
+>以及其它的三个判断函数，运用system.arraycopy（）函数来实现精准分配。<br>
+>根据动态分配实现增、删、改、查。<br>
+>迭代的方法则参考原ArrayList的内部类。<br>
