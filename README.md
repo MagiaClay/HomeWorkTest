@@ -29,6 +29,10 @@ public MyArrayList(Collection<? extends Number> c)
 ```
 <br>
 * 用于反射的空构造<br>
+<br>
 属性
 --------
-*     详情见代码注释
+*     详情见代码注释。<br>
+<br>
+一般方法
+--------
