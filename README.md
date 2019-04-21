@@ -46,3 +46,6 @@ public MyArrayList(Collection<? extends Number> c)
 * public E remove(int index)<br>
 * public ListIterator<E> listIterator(int index)<br>
   详情请见源码注释。<br>
+<br>
+内部类
+------
