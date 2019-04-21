@@ -31,12 +31,14 @@ public MyArrayList(Collection<? extends Number> c)
 <br>
 * 用于反射的空构造<br>
 <br>
-#属性
+属性
 --------
+<br>
 *     详情见代码注释。<br>
 <br>
-#一般方法
+一般方法
 --------
+<br>
 * public void trimToSize()<br>
 * public void ensureCapacity(int minCapacity)<br>
 * public int indexOf(Object o)<br>
