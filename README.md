@@ -20,8 +20,13 @@ MyArrayList<E extends Number>
 ---------
 
 <br>
+
 构造方法
-* 初始化容量构造
+-------
+
+* 初始化容量构造<br>
+
+
 ```
 public MyArrayList(int initialCapacity)
 ```
