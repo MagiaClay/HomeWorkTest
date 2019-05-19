@@ -1,6 +1,7 @@
-#树莓-Android-第三次作业RecyclerViewTest
+
+#树莓-Android-第三次作业RecyclerViewTestDEMO
 =====================
-自己定义的图片浏览器(该版本在Anroid Studio3.4版本开发，依赖语法已更改,测试用DEMO，具有无效依赖或无效函数)
+自己定义的图片浏览器(该版本在Anroid Studio3.4版本开发，依赖语法已更改,测试用DEMO，具有无效依赖（导致总容量过大）或无效函数)
 -------------------------
 <br>
 
@@ -30,26 +31,16 @@ LayOut
 
 * 主页面利用的是最基本的recyelerview布局。<br>
 * 供recyelerview使用的单个子fruit_item布局。<br>
+* 查看大图核心布局dialog_View布局，采用的RelativeLayout实现。<br>
+* 供dialog_view使用的单个子beauties_item布局，采用FrameLayout实现。<br>
 
-
-```
-public MyArrayList(int initialCapacity)
-```
 <br>
 
-* 传入对象构造，关于Number类的子类
-```
-public MyArrayList(Collection<? extends Number> c)
-```
-<br>
-* 用于反射的空构造<br>
-<br>
-
-属性
+Drawble
 --------
 
 <br>
-*     详情见代码注释。<br>
+*  关于下载、删除和回撤的3种PNG图片，其余图片来自网络或SDCard。<br>
 <br>
 
 一般方法
