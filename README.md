@@ -1,7 +1,7 @@
 
 #树莓-Android-第三次作业RecyclerViewTestDEMO
 =====================
-自己定义的图片浏览器(该版本在Anroid Studio3.4版本开发，依赖语法已更改,测试用DEMO，具有无效依赖（导致总容量过大）或无效函数)
+作业1：自己定义的图片浏览器(该版本在Anroid Studio3.4版本开发，依赖语法已更改,测试用DEMO，具有无效依赖（导致总容量过大）或无效函数)
 -------------------------
 <br>
 
@@ -74,6 +74,7 @@ public class ScaleImageView
 >* public interface OnDeleteItemListener {
         void onDelete(int position);
     }封装的内部接口，一半用于覆写删除本地图片操作。<br>
+* MainActivity则负责网络申请和加载图片。<br>
 * 其他类可以无视。<br>
   
   详情请见源码注释。<br>
@@ -84,25 +85,6 @@ public class ScaleImageView
 #构建思路过程
 --------
 
->编写MyArrayList类时与编写MyString类时候不太相同，首先从ArrayList原本功能分析。<br>
->* 有类集框架的基本内容：增、删、改、查以及迭代。<br>
->* 以及其最大的优点动态分配内存。<br>
->* 只能接受整型数和浮点数。<br>
-
->实现增删改查的同时要保证内存不会分配过少导致数组越界，不会分配太多导致占用内存。<br>
->得出结论：重点在于如何实现动态内存分配。具体实现参照以下以及grow（）函数。
-
-```
-* public void ensureCapacity(int minCapacity)
-ElementData = (size == 0)? EMPTY_ELEMENTDATA: Arrays.copyOf(elementData, size);
-```
-
->* 以及其它的三个判断函数，运用system.arraycopy（）函数来实现精准分配。<br>
->* 根据动态分配实现增、删、改、查。<br>
->* 迭代的方法则参考原ArrayList的内部类。<br>
-
-
-**大多数功能参考自ArrayList**<br>
 
 作业2 具有完整功能的多媒体播放器
 --------------------------------
@@ -112,4 +94,4 @@ ElementData = (size == 0)? EMPTY_ELEMENTDATA: Arrays.copyOf(elementData, size);
 #当前进度
 --------
 * JAVA看到数据库的内容。<br>
-* 第一行代码在看数据库。<br>
+* 第一行代码在看数据库,插入网络申请。<br>
