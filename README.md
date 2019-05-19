@@ -40,22 +40,29 @@ Drawble
 --------
 
 <br>
-*  关于下载、删除和回撤的3种PNG图片，其余图片来自网络或SDCard。<br>
+* 关于下载、删除和回撤的3种PNG图片，其余图片来自网络或SDCard。<br>
 <br>
 
-一般方法
+功能的具体实现类
 --------
 
 <br>
 
-* public void trimToSize()主要用来在数组元素有更改后进行数组容量最小化，清除多余的空间<br>
-* public void ensureCapacity(int minCapacity)确保有足够的空间分配新内存，若不够则扩大容量（所需要内存的最低容量）<br>
-* public int indexOf(Object o)索引内容返回其指针<br>
-* public <T> T[] toArray(T[] a)返回一个指定泛型的特定元素<br>
-* public E get(int index)得到索引目标处的元素内容<br>
-* public void add(int index, E element)指定位置内添加元素<br>
-* public E remove(int index)指定位置内移除元素<br>
-* public ListIterator<E> listIterator(int index)迭代方法<br>
+```
+public class Fruit
+```
+* 就是图片类（你知道为什么叫Fruit），存有每张图片属性 _id url Bitmap<br>
+```
+public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>
+```
+* 水果类的适配器，注意在该适配器的onCreateViewHolder（）中指加入了从网络加载大图功能，若想实现从FILE中加载则可更改为<br>
+```
+ScaleImageView scaleImageView = new ScaleImageView((Activity) context);
+                scaleImageView.setFiles(files, position);
+                scaleImageView.setOnDeleteItemListener(deletePosition -> adapter.removeItem(deletePosition));
+                scaleImageView.create();
+```
+
   
   详情请见源码注释。<br>
 <br>
