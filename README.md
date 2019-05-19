@@ -62,6 +62,18 @@ ScaleImageView scaleImageView = new ScaleImageView((Activity) context);
                 scaleImageView.setOnDeleteItemListener(deletePosition -> adapter.removeItem(deletePosition));
                 scaleImageView.create();
 ```
+```
+public class ScaleImageView
+```
+* 图片加载器的核心(属性和方法忘记加注释了)<br>
+>* private void init()初始化，根据subsampling-scale-image-view配置相关默认属性。<br>
+>* public void create()使dialong实现在主布局上。<br>
+>* public void setUrls(List<String> urls, int startPosition)从网络查看大图。<br>
+>* public void setFiles(List<File> files, int startPosition) 从文件中查看。<br>
+>* private static class MyPagerAdapter extends PagerAdapter封装的内部类适配器。<br>
+>* public interface OnDeleteItemListener {
+        void onDelete(int position);
+    }封装的内部接口，一半用于覆写删除本地图片操作。<br>
 
   
   详情请见源码注释。<br>
@@ -98,6 +110,7 @@ ElementData = (size == 0)? EMPTY_ELEMENTDATA: Arrays.copyOf(elementData, size);
 >* 以及其它的三个判断函数，运用system.arraycopy（）函数来实现精准分配。<br>
 >* 根据动态分配实现增、删、改、查。<br>
 >* 迭代的方法则参考原ArrayList的内部类。<br>
+
 
 **大多数功能参考自ArrayList**<br>
 
