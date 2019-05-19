@@ -7,7 +7,8 @@
 
 ##功能简介(背景)
 ---------
-![](https://github.com/MagiaClay/HomeWorkTest/raw/master/捕获.PNG) 
+![](https://github.com/MagiaClay/HomeWorkTest/raw/master/捕获.PNG) <br>
+![](https://github.com/MagiaClay/HomeWorkTest/raw/master/捕获1.PNG) 
 * 实现瀑布流水式基本预览图布局<br>
 * 可以解析JSON接口并取得所需要的信息<br>
 * 利用dialog和开源库subsampling-scale-image-view实现点击放大图片<br>
