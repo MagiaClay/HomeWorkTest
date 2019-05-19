@@ -74,22 +74,12 @@ public class ScaleImageView
 >* public interface OnDeleteItemListener {
         void onDelete(int position);
     }封装的内部接口，一半用于覆写删除本地图片操作。<br>
-
+* 其他类可以无视。<br>
   
   详情请见源码注释。<br>
 <br>
   
-  
-内部类
-------
 
-  <br>
-  
-```
-private class Itr implements Iterator<E>
-```
-<br>
-照写了原Arraylist在AbstractList.listitr的优化版本。<br>
 
 #构建思路过程
 --------
@@ -114,12 +104,12 @@ ElementData = (size == 0)? EMPTY_ELEMENTDATA: Arrays.copyOf(elementData, size);
 
 **大多数功能参考自ArrayList**<br>
 
-Level-2 具有完整登陆、注册功能的APP
+作业2 具有完整功能的多媒体播放器
 --------------------------------
 
->当前进度主要还在第一行代码的活动生命周期处。还没看数据库，日后补。<br>
+进度还是没赶上，日后补。<br>
 
 #当前进度
 --------
 * JAVA看到数据库的内容。<br>
-* 第一行代码在看活动的生命周期。<br>
+* 第一行代码在看数据库。<br>
